@@ -11,6 +11,11 @@ class DB {
         ):
     }
 
+    findAllPossibleManagers(employeeId) {
+        return this.connection.query(
+            "SELECT id, first_name, last_name FROM employee WHERE id != ?", employeeId);
+    }
+
     createEmployee(employee) {
         return this.connection.query("INSERT INTO employee set ?", employee);
     }
@@ -19,3 +24,5 @@ class DB {
         return this.connection.query("DELETE FROM employee WHERE id = ?", employeeId);
     }
 }
+
+module.exports = new DB(connection);

@@ -5,19 +5,19 @@ const mysql = require("mysql");
 const connection = mysql.createConnection({
     host: "localhost",
 
-    // Your port; if not 3306
+    // Port
     port: 3306,
 
-    // Your username
+    // Username
     user: "root",
 
-    // Your password
+    // Password
     password: "kristin91",
     database: "employee_db",
-  });
+});
 
-  connection.connect();
+connection.connect();
 
-  connection.query = util.promisify(connection.query);
+connection.query = util.promisify(connection.query);
 
-  module.exports = connection;
+module.exports = connection;

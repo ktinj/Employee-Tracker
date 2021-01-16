@@ -44,12 +44,11 @@ The command-line application allows the user to:
 
 * Use [console.table](https://www.npmjs.com/package/console.table) to print MySQL rows to the console. 
 
-* Use [asciiart-logo](https://www.npmjs.com/package/asciiart-logo) to render splash screen
-
-![Employee Tracker](Assets/employee-tracker.gif)
-
 ### Links
 [GitHub Repo](https://github.com/ktinj/Employee-Tracker)
+
+### Issues
+I ran into issues connecting mySQL. It worked initially but then somehow the connection was lost and I was never able to figure out how to fix it. 
 
 
 
